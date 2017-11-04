@@ -16,8 +16,6 @@
 				<false/>
 				<key>FiX_WAK_200000</key>
 				<false/>
-				<key>NewWay_80000000</key>
-				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -125,8 +123,6 @@
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -155,7 +151,7 @@
 		<key>Timeout</key>
 		<integer>-1</integer>
 		<key>XMPDetection</key>
-		<string>NO</string>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -190,8 +186,6 @@
 			<key>Inject</key>
 			<false/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -219,6 +213,8 @@
 			<true/>
 			<key>Legacy</key>
 			<string>First</string>
+			<key>Linux</key>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -245,14 +241,14 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
+		<key>#FakeCPUID</key>
+		<string>0x010676</string>
+		<key>AppleIntelCPUPM</key>
 		<true/>
-		<key>AsusAICPUPM</key>
+		<key>AppleRTC</key>
 		<true/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>#FakeCPUID</key>
-		<string>0x010676</string>
 		<key>KernelHaswellE</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -264,6 +260,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>External icons patch</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
@@ -294,6 +292,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>Skylake APIC fix, discovered by Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				wegQD7bw
@@ -308,6 +308,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>10.11-SKL530-Port_0-DP2HDMI</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				/wAAAAEAAABAAAAA
@@ -322,6 +324,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>10.11-SKL-1912000-4_displays</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQMDAw==
@@ -385,8 +389,6 @@
 		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
-		<key>NvidiaWeb</key>
-		<false/>
 	</dict>
 </dict>
 </plist>
