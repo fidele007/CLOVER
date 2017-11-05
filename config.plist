@@ -221,7 +221,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>tonymacx86</string>
+		<string>softinverted</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
