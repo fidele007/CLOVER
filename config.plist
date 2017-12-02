@@ -280,22 +280,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Raise 15 port limit to 26 in AppleUSBXHCIPCI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Hw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Skylake APIC fix, discovered by Pike R. Alpha</string>
 				<key>Disabled</key>
 				<false/>
