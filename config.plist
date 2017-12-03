@@ -16,6 +16,8 @@
 				<false/>
 				<key>FiX_WAK_200000</key>
 				<false/>
+				<key>FixHDA</key>
+				<true/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -163,7 +165,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>3</string>
+			<string>13</string>
 		</dict>
 		<key>FakeID</key>
 		<dict>
